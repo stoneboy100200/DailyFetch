@@ -10,7 +10,7 @@ Git
 ### Linux user
 - Edit 'DailyFetch.py', and set your repository path. For example:
 
-`NINCG3_PATH="ENTER_YOUR_PATH" => NINCG3_PATH="ENTER_YOUR_PATH"`
+`repository="ENTER_YOUR_PATH" => repository="/home/lse9szh/Project/test"`
 
 - Set up your 'crontab' service
 To use crontab for tasks meant to run only for your user profile, add entries to your own user's crontab file. To edit the crontab file enter: 
@@ -27,12 +27,12 @@ This command says, '~/project/DailyFetch.py' will be started at 05:00 every day
 ### Windows user
 - Edit 'DailyFetch.bat', and set your repository path. For example:
 
-`NINCG3_PATH="ENTER_YOUR_PATH" => NINCG3_PATH="ENTER_YOUR_PATH"`
+`repository="ENTER_YOUR_PATH" => repository="D:/Project/test"`
 
 - Open window command prompt and start 'schtasks'
 More details about schtasks please refer to the [schtasks](https://technet.microsoft.com/en-us/library/cc725744%28v=ws.11%29.aspx)<br />
 EX:
 
-`schtasks /create /tn "DailyFetch" /tr "D:\NavRepoVS2013\DailyFetch.bat" /sc daily /st 05:00`
+`schtasks /create /tn "DailyFetch" /tr "D:\script\DailyFetch.bat" /sc daily /st 05:00`
 
 This command says, 'DailyFetch.bat' will be started at 05:00 every day, the task name is 'DailyFetch'.
