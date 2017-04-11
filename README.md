@@ -25,7 +25,7 @@ EX:
 This command says, '~/project/DailyFetch.py' will be started at 05:00 every day
 
 ### Windows user
-- Edit 'DailyFetch.bat', and set your repository path. For example:
+- Edit 'DailyFetch.py', and set your repository path. For example:
 
 `repository="ENTER_YOUR_PATH" => repository="D:/Project/test"`
 
@@ -33,6 +33,6 @@ This command says, '~/project/DailyFetch.py' will be started at 05:00 every day
 More details about schtasks please refer to the [schtasks](https://technet.microsoft.com/en-us/library/cc725744%28v=ws.11%29.aspx)<br />
 EX:
 
-`schtasks /create /tn "DailyFetch" /tr "D:\script\DailyFetch.bat" /sc daily /st 05:00`
+`schtasks /create /tn "DailyFetch" /tr "python D:\script\DailyFetch.py" /sc daily /st 05:00`
 
-This command says, 'DailyFetch.bat' will be started at 05:00 every day, the task name is 'DailyFetch'.
+This command says, 'DailyFetch.py' will be started at 05:00 every day, the task name is 'DailyFetch'.
