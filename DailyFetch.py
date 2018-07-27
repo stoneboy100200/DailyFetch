@@ -7,6 +7,7 @@
 
 import os,subprocess,sys
 
+
 NINCG3_PATH="/home/lse9szh/project/nincg3"
 if not os.path.exists(NINCG3_PATH):
    print "[Error] %s doesn't exist!" %NINCG3_PATH
